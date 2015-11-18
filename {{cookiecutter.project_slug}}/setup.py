@@ -6,7 +6,7 @@ try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
-from .setup_utils import CustomInstall, read_requirements
+from setup_utils import CustomInstall, read_requirements
 
 
 with open('README.rst') as readme_file:
