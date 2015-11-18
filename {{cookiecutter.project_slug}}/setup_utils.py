@@ -29,7 +29,7 @@ class CustomInstall(install):
         install.do_egg_install(self)
 
         current_dir = os.path.dirname(os.path.realpath(__file__))
-        for submodule in self.requirements['git_submodules']:
+        for submodule in self.requirements['submodules']:
             pth_path = os.path.join(get_python_lib(), submodule + ".pth")
             with open(pth_path, 'w') as pth:
                 pth.write(os.path.join(current_dir, submodule) + os.linesep)
