@@ -1,13 +1,11 @@
 {
-	"full_name": "Audrey Roy",
-	"email": "audreyr@gmail.com",
-	"github_username": "audreyr",
+	"full_name": "Carmine Paolino",
+	"email": "carmine@owlin.com",
+	"github_username": "owlin",
 	"project_name": "Python Boilerplate",
 	"project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
 	"project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
-	"release_date": "2015-01-11",
-	"pypi_username": "{{ cookiecutter.github_username }}",
+	"release_date": "2015-11-18",
 	"year": "2015",
 	"version": "0.1.0",
-	"use_pypi_deployment_with_travis": "y"
 }

@@ -9,7 +9,7 @@ Cookiecutter template for a Python package. See https://github.com/audreyr/cooki
 
 * Free software: BSD license
 * Vanilla testing setup with `unittest` and `python setup.py test`
-* Travis-CI_: Ready for Travis Continuous Integration testing
+* Wercker_: Ready for Wercker Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Bumpversion: Pre-configured version bumping with a single command
@@ -19,19 +19,15 @@ Usage
 
 Generate a Python package project::
 
-    cookiecutter https://github.com/audreyr/cookiecutter-pypackage.git
+    cookiecutter https://github.com/owlin/cookiecutter-pypackage.git
 
 Then:
 
 * Create a repo and put it there.
-* Add the repo to your Travis CI account.
-* Run the script `travis_pypi_setup.py` to encrypt your PyPI password in Travis config
-  and activate automated deployment on PyPI when you push a new tag to master branch.
 * Add the repo to your ReadTheDocs account + turn on the ReadTheDocs service hook.
-* Release your package the standard Python way. Here's a release checklist: 
+* Release your package the standard Python way. Here's a release checklist:
   https://gist.github.com/audreyr/5990987
-* (Optional) If you feel like pinning the requirements for your package, you can
-  add a `requirements.txt` that specifies packages and version numbers.
+* Add a `requirements.txt` that specifies packages and (optional) version numbers.
 
 Not Exactly What You Want?
 --------------------------
@@ -43,10 +39,10 @@ Similar Cookiecutter Templates
 
 * `Nekroze/cookiecutter-pypackage`_: A fork of this with a PyTest test runner,
   strict flake8 checking with Travis/Tox, and some docs and `setup.py` differences.
-  
-* `tony/cookiecutter-pypackage-pythonic`_: Fork with py2.7+3.3 optimizations. 
+
+* `tony/cookiecutter-pypackage-pythonic`_: Fork with py2.7+3.3 optimizations.
   Flask/Werkzeug-style test runner, ``_compat`` module and module/doc conventions.
-  See ``README.rst`` or the `github comparison view`_ for exhaustive list of 
+  See ``README.rst`` or the `github comparison view`_ for exhaustive list of
   additions and modifications.
 
 * Also see the `network`_ and `family tree`_ for this repo. (If you find
@@ -60,7 +56,7 @@ to create your own version. Or create your own; it doesn't strictly have to
 be a fork.
 
 * Once you have your own version working, add it to the Similar Cookiecutter
-  Templates list above with a brief description. 
+  Templates list above with a brief description.
 
 * It's up to you whether or not to rename your fork/own version. Do whatever
   you think sounds good.
@@ -72,7 +68,7 @@ I also accept pull requests on this, if they're small, atomic, and if they
 make my own packaging experience better.
 
 
-.. _Travis-CI: http://travis-ci.org/
+.. _Wercker: http://wercker.com/
 .. _Tox: http://testrun.org/tox/
 .. _Sphinx: http://sphinx-doc.org/
 .. _ReadTheDocs: https://readthedocs.org/

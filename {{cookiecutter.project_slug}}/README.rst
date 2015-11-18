@@ -15,7 +15,7 @@
 
 {{ cookiecutter.project_short_description}}
 
-* Free software: ISC license
+* Free software: MIT license
 * Documentation: https://{{ cookiecutter.project_slug }}.readthedocs.org.
 
 Features
@@ -32,4 +32,4 @@ Tools used in rendering this package:
 *  `cookiecutter-pypackage`_
 
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+.. _`cookiecutter-pypackage`: https://github.com/owlin/cookiecutter-pypackage

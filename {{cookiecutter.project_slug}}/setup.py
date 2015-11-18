@@ -6,6 +6,7 @@ try:
     from setuptools import setup
 except ImportError:
     from distutils.core import setup
+from .setup_utils import CustomInstall, read_requirements
 
 
 with open('README.rst') as readme_file:
@@ -14,14 +15,6 @@ with open('README.rst') as readme_file:
 with open('HISTORY.rst') as history_file:
     history = history_file.read().replace('.. :changelog:', '')
 
-requirements = [
-    # TODO: put package requirements here
-]
-
-test_requirements = [
-    # TODO: put package test requirements here
-]
-
 setup(
     name='{{ cookiecutter.project_slug }}',
     version='{{ cookiecutter.version }}',
@@ -29,15 +22,15 @@ setup(
     long_description=readme + '\n\n' + history,
     author="{{ cookiecutter.full_name }}",
     author_email='{{ cookiecutter.email }}',
-    url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
+    url='https://bitbucket.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
     packages=[
         '{{ cookiecutter.project_slug }}',
     ],
     package_dir={'{{ cookiecutter.project_slug }}':
                  '{{ cookiecutter.project_slug }}'},
     include_package_data=True,
-    install_requires=requirements,
-    license="ISCL",
+    install_requires=read_requirements('requirements.txt'),
+    license="MIT",
     zip_safe=False,
     keywords='{{ cookiecutter.project_slug }}',
     classifiers=[
@@ -53,5 +46,6 @@ setup(
         'Programming Language :: Python :: 3.4',
     ],
     test_suite='tests',
-    tests_require=test_requirements
+    tests_require=read_requirements('requirements_test.txt'),
+    cmdclass={'install': CustomInstall}
 )
