@@ -6,10 +6,12 @@ Cookiecutter template for a Python package. See https://github.com/audreyr/cooki
 
 * Free software: BSD license
 * Vanilla testing setup with `unittest` and `python setup.py test`
+* Pre-commit_: Pre-configured pre-commit git hooks to find and fix common issues
+  before changes are submitted for code review
 * Wercker_: Ready for Wercker Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
-* Bumpversion: Pre-configured version bumping with a single command
+* Bumpversion_: Pre-configured version bumping with a single command
 
 Usage
 -----
@@ -20,7 +22,7 @@ Generate a Python package project::
 
 Then:
 
-* Create a repo and put it there.
+* `cd` to your new project
 * Add the repo to your ReadTheDocs account + turn on the ReadTheDocs service hook.
 * Release your package the standard Python way. Here's a release checklist:
   https://gist.github.com/audreyr/5990987
@@ -65,6 +67,8 @@ I also accept pull requests on this, if they're small, atomic, and if they
 make my own packaging experience better.
 
 
+.. _Bumpversion: https://pypi.python.org/pypi/bumpversion
+.. _Pre-commit: http://pre-commit.com/
 .. _Wercker: http://wercker.com/
 .. _Tox: http://testrun.org/tox/
 .. _Sphinx: http://sphinx-doc.org/

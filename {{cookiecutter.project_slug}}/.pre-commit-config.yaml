@@ -16,5 +16,4 @@
     - id: fix-encoding-pragma
     - id: flake8
     - id: name-tests-test
-    - id: pretty-format-json
     - id: requirements-txt-fixer
