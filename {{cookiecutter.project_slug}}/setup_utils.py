@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from setuptools.command.install import install
 
 

@@ -22,7 +22,8 @@ setup(
     long_description=readme + '\n\n' + history,
     author="{{ cookiecutter.full_name }}",
     author_email='{{ cookiecutter.email }}',
-    url='https://bitbucket.org/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
+    url='https://bitbucket.org/{{ cookiecutter.github_username }}'
+    '/{{ cookiecutter.project_slug }}',
     packages=[
         '{{ cookiecutter.project_slug }}',
     ],
