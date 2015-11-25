@@ -8,7 +8,7 @@ def verify_python_module_name():
 
     MODULE_REGEX = r'^[_a-zA-Z][_a-zA-Z0-9]+$'
 
-    module_name = '{{ cookiecutter.module_name }}'
+    module_name = '{{ cookiecutter.project_slug }}'
 
     if not re.match(MODULE_REGEX, module_name):
         print('ERROR: %s is not a valid Python module name!' % module_name)
@@ -23,7 +23,6 @@ def verify_feature_branch_name():
     branch_name = '{{ cookiecutter.first_feature_branch_name }}'
 
     process_name = ['git', 'check-ref-format', '--branch', branch_name]
-
     process = subprocess.Popen(process_name).wait()
     exit_status = process.wait()
 
