@@ -23,7 +23,7 @@ def verify_feature_branch_name():
     branch_name = '{{ cookiecutter.first_feature_branch_name }}'
 
     process_name = ['git', 'check-ref-format', '--branch', branch_name]
-    process = subprocess.Popen(process_name).wait()
+    process = subprocess.Popen(process_name)
     exit_status = process.wait()
 
     if exit_status != 0:
