@@ -1,4 +1,7 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
+
+# fail on error
+set -e
 
 git init
 git add .
