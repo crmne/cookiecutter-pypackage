@@ -3,6 +3,18 @@
 import sys
 
 
+def verify_pre_commit_installed():
+    from distutils.spawn import find_executable
+
+    if not find_executable('pre-commit'):
+        print('ERROR: pre-commit executable not found!\n'
+              'Please run `pip install pre-commit` to install it or follow the '
+              'instructions at http://pre-commit.com/#install')
+
+        # exits with status 1 to indicate failure
+        sys.exit(1)
+
+
 def verify_python_module_name():
     import re
 
@@ -34,5 +46,6 @@ def verify_feature_branch_name():
 
 
 if __name__ == '__main__':
+    verify_pre_commit_installed()
     verify_python_module_name()
     verify_feature_branch_name()
