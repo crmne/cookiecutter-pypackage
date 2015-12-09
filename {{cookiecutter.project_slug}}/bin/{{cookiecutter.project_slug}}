@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+import logging
+from {{cookiecutter.project_slug}}.config import Config
+import argparse
+
+
+if __name__ == '__main__':
+    # load config
+    config = Config()
+    config.parse(sys.argv[1:])
+
+    # setup root logger
+    logging.basicConfig(level=config.loglevel.upper())
+    logging.warn('Running in a {0} environment'.format(config.environment))
+
+    # TODO: your code here
