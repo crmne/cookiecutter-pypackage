@@ -1,0 +1,14 @@
+# The container definition we want to use for developing our app
+box: python:2.7
+
+# in this dev clause we define the steps we want to take when developing
+dev:
+  steps:
+    # first we want to run make install to install all the dependencies
+    - script:
+        code: make install
+    # then we want to run a wercker step that watches your files and reloads
+    # when changes are detected
+    - internal/watch:
+        code: bin/{{cookiecutter.project_slug}}
+        reload: true
