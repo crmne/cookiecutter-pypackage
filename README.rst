@@ -8,7 +8,7 @@ Features
 --------
 
 * Free software: BSD license
-* Vanilla testing setup with `unittest`, `nosetests` and `python setup.py test`
+* Testing setup with `nosetests` and `python setup.py test`
 * Pre-commit_: Pre-configured pre-commit git hooks to find and fix common issues
   before changes are submitted for code review
 * Wercker_: Ready for Wercker Continuous Integration testing
