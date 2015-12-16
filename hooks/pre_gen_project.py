@@ -3,11 +3,12 @@
 import sys
 
 
-def verify_executable_installed(executable):
+def verify_executable_installed(executable, instmsg):
     from distutils.spawn import find_executable
 
     if not find_executable(executable):
-        print("ERROR: {0} executable not found!".format(executable))
+        print("ERROR: {0}: command not found!".format(executable))
+        print("Installation: " + instmsg)
 
         # exits with status 1 to indicate failure
         sys.exit(1)
@@ -44,7 +45,7 @@ def verify_feature_branch_name():
 
 
 if __name__ == '__main__':
-    verify_executable_installed("pre-commit")
-    verify_executable_installed("wercker")
+    verify_executable_installed("pre-commit", "pip install pre-commit")
+    verify_executable_installed("wercker", "see http://wercker.com/downloads")
     verify_python_module_name()
     verify_feature_branch_name()

@@ -6,7 +6,6 @@
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
     "github_username": "owlin",
     "first_feature_branch_name": "hello_world",
-    "release_date": "2015-11-18",
     "version": "0.1.0",
     "year": "2015"
 }

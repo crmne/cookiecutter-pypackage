@@ -7,8 +7,8 @@ class CustomInstall(install):
 
     Installs git submodules and packages that need to be installed first."""
     files = {
-        'install_first': 'requirements_install_first.txt',
-        'submodules': 'requirements_submodules.txt'
+        'install_first': 'requirements/install_first.txt',
+        'submodules': 'requirements/submodules.txt'
     }
 
     @staticmethod

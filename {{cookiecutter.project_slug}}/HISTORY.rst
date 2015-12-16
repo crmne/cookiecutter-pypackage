@@ -3,7 +3,7 @@
 History
 -------
 
-{{ cookiecutter.version }} ({{ cookiecutter.release_date }})
+{{ cookiecutter.version }} (TODO: add release date)
 ---------------------
 
-* First release on PyPI.
+* First release.

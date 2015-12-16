@@ -2,16 +2,20 @@
 cookiecutter-pypackage
 ======================
 
-Cookiecutter template for a Python package. See https://github.com/audreyr/cookiecutter.
+Cookiecutter_ template for a Python package.
+
+Features
+--------
 
 * Free software: BSD license
-* Vanilla testing setup with `unittest` and `python setup.py test`
+* Vanilla testing setup with `unittest`, `nosetests` and `python setup.py test`
 * Pre-commit_: Pre-configured pre-commit git hooks to find and fix common issues
   before changes are submitted for code review
 * Wercker_: Ready for Wercker Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Bumpversion_: Pre-configured version bumping with a single command
+* GitHub-Flow_: Starts on new feature branch
 
 Usage
 -----
@@ -26,7 +30,7 @@ Then:
 * Add the repo to your ReadTheDocs account + turn on the ReadTheDocs service hook.
 * Release your package the standard Python way. Here's a release checklist:
   https://gist.github.com/audreyr/5990987
-* Add a `requirements.txt` that specifies packages and (optional) version numbers.
+* Edit the `requirements/common.txt` that specifies packages and (optional) version numbers.
 
 Not Exactly What You Want?
 --------------------------
@@ -66,7 +70,8 @@ Or Submit a Pull Request
 I also accept pull requests on this, if they're small, atomic, and if they
 make my own packaging experience better.
 
-
+.. _GitHub-Flow: https://guides.github.com/introduction/flow/
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter.
 .. _Bumpversion: https://pypi.python.org/pypi/bumpversion
 .. _Pre-commit: http://pre-commit.com/
 .. _Wercker: http://wercker.com/
