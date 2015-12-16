@@ -4,7 +4,7 @@
     "project_name": "Python Boilerplate",
     "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "github_username": "owlin",
+    "bitbucket_username": "owlin",
     "first_feature_branch_name": "hello_world",
     "version": "0.1.0",
     "year": "2015"
