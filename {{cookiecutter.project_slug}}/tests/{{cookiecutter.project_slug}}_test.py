@@ -1,4 +1,3 @@
-#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 {{ cookiecutter.project_slug }}_test
@@ -6,8 +5,6 @@
 
 Tests for `{{ cookiecutter.project_slug }}` module.
 """
-
-from nose.tools import *
 
 # from {{ cookiecutter.project_slug }} import {{ cookiecutter.project_slug }}
 
