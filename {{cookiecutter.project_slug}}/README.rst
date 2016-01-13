@@ -19,6 +19,10 @@ For development::
 
     wercker dev
 
+For building/testing::
+
+    wercker build
+
 Credits
 ---------
 

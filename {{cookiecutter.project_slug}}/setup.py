@@ -42,6 +42,6 @@ setup(name='{{ cookiecutter.project_slug }}',
           'Programming Language :: Python :: 3.3',
           'Programming Language :: Python :: 3.4',
       ],
-      test_suite='tests',
+      test_suite='nose.collector',
       tests_require=read_requirements('requirements/test.txt'),
       cmdclass={'install': CustomInstall})
