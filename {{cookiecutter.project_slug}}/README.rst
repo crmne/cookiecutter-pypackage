@@ -11,6 +11,14 @@ Features
 
 * TODO
 
+
+Get me up and running
+---------------------
+
+For development::
+
+    wercker dev
+
 Credits
 ---------
 
