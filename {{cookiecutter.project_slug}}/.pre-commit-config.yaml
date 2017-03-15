@@ -13,7 +13,7 @@
     - id: check-yaml
     - id: debug-statements
     - id: end-of-file-fixer
-    - id: fix-encoding-pragma
+    # - id: fix-encoding-pragma
     - id: flake8
       args: ['--exclude=docs/*']
     - id: name-tests-test
