@@ -46,6 +46,5 @@ def verify_feature_branch_name():
 
 if __name__ == '__main__':
     verify_executable_installed("pre-commit", "pip install pre-commit")
-    verify_executable_installed("wercker", "see http://wercker.com/downloads")
     verify_python_module_name()
     verify_feature_branch_name()

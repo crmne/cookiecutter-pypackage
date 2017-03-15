@@ -56,10 +56,3 @@ docs/_build/
 
 # PyBuilder
 target/
-
-# Wercker
-_builds/
-_steps/
-_cache/
-_projects/
-_temp/

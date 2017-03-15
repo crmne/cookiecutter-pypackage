@@ -12,17 +12,6 @@ Features
 * TODO
 
 
-Get me up and running
----------------------
-
-For development::
-
-    wercker dev
-
-For building/testing::
-
-    wercker build
-
 Credits
 ---------
 

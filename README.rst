@@ -11,7 +11,6 @@ Features
 * Testing setup with `nosetests` and `python setup.py test`
 * Pre-commit_: Pre-configured pre-commit git hooks to find and fix common issues
   before changes are submitted for code review
-* Wercker_: Ready for Wercker Continuous Integration testing
 * Tox_ testing: Setup to easily test for Python 2.6, 2.7, 3.3, 3.4
 * Sphinx_ docs: Documentation ready for generation with, for example, ReadTheDocs_
 * Bumpversion_: Pre-configured version bumping with a single command
@@ -74,7 +73,6 @@ make my own packaging experience better.
 .. _Cookiecutter: https://github.com/audreyr/cookiecutter.
 .. _Bumpversion: https://pypi.python.org/pypi/bumpversion
 .. _Pre-commit: http://pre-commit.com/
-.. _Wercker: http://wercker.com/
 .. _Tox: http://testrun.org/tox/
 .. _Sphinx: http://sphinx-doc.org/
 .. _ReadTheDocs: https://readthedocs.org/

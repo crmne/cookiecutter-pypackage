@@ -1,11 +1,11 @@
 {
     "full_name": "Carmine Paolino",
-    "email": "carmine@owlin.com",
+    "email": "carmine@paolino.me",
     "project_name": "Python Boilerplate",
     "project_short_description": "Python Boilerplate contains all the boilerplate you need to create a Python package.",
     "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_') }}",
-    "bitbucket_username": "owlin",
+    "github_username": "crmne",
     "first_feature_branch_name": "hello_world",
     "version": "0.1.0",
-    "year": "2015"
+    "year": "2017"
 }
